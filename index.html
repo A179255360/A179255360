@@ -10,9 +10,7 @@
         <link rel="stylesheet" href="assets/css/normalize.css">
         <!-- CSS perso -->
         <link rel="stylesheet" href="assets/css/base.css">
-        <!-- <link rel="stylesheet" href="assets/css/style_portable.css">
-        <link rel="stylesheet" href="assets/css/style_tablet.css">
-        <link rel="stylesheet" href="assets/css/style_pc.css"> -->
+        <link rel="stylesheet" href="assets/css/style_grand.css"> 
 
 </head>
 <body>
@@ -24,11 +22,11 @@
             <ul>
                 <li><a href="#maCarte">PLATS</a></li>
                 <li><a href="#blog">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
-        <button class="UpFONT">DARK</button>
+        <button class="darkmode UpFONT">DARK</button>
     </header>
 
     <main>
@@ -67,50 +65,132 @@
 
         <section id="blog"> <!-- mon blog-->
             <h2>blog</h2>
-                <article class="artBlog"> <!-- mon blog first article-->
-                    <img src="assets/img/pic01.jpg" alt="une super sacoche de velo">
-                    <h3>un super titre</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
-                        explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
-                        itaque voluptatum cum porro quasi.
-                    </p>    
-                </article>
-
-                <article class="artBlog">  <!-- mon blog two article-->
-                    <img src="assets/img/pic02.jpg" alt="tramway dans une ruel">
-                    <h3>un super titre</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
-                        explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
-                        itaque voluptatum cum porro quasi.
-                    </p>    
-                </article>
-
-                <article class="artBlog">  <!-- mon blog three article-->
-                    <img src="assets/img/pic03.jpg" alt="photo d'un voile">
-                    <h3>un super titre</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
-                        explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
-                        itaque voluptatum cum porro quasi.
-                    </p>    
-                </article>
-
-                <article class="artBlog">  <!-- mon blog foor article-->
-                    <img src="assets/img/pic04.jpg" alt="tour de guey sur une plage">
-                    <h3>un super titre</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
-                        explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
-                        itaque voluptatum cum porro quasi.
-                    </p>    
-                </article>
+                <div class="container3">
+                    <article class="artBlog"> <!-- mon blog first article-->
+                        <img src="assets/img/pic01.jpg" alt="une super sacoche de velo">
+                        <h3>un super titre</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
+                            explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
+                            itaque voluptatum cum porro quasi.
+                        </p>    
+                    </article>
+    
+                    <article class="artBlog">  <!-- mon blog two article-->
+                        <img src="assets/img/pic02.jpg" alt="tramway dans une ruel">
+                        <h3>un super titre</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
+                            explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
+                            itaque voluptatum cum porro quasi.
+                        </p>    
+                    </article>
+    
+                    <article class="artBlog">  <!-- mon blog three article-->
+                        <img src="assets/img/pic03.jpg" alt="photo d'un voile">
+                        <h3>un super titre</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
+                            explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
+                            itaque voluptatum cum porro quasi.
+                        </p>    
+                    </article>
+    
+                    <article class="artBlog">  <!-- mon blog foor article-->
+                        <img src="assets/img/pic04.jpg" alt="tour de guey sur une plage">
+                        <h3>un super titre</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam in dolore voluptas fuga 
+                            explicabo veritatis aspernatur eaque laboriosam iure voluptate odit deserunt unde dolores nobis, 
+                            itaque voluptatum cum porro quasi.
+                        </p>    
+                    </article>
+                </div>
         </section>
     </main>
 
-    <aside>
+    <footer id="contact">
+        <h2 class="UpFONT">formulaire de CONTACT</h2>
 
+            <p>Pour plus de détails vous pouvez consultez notre site 
+                <a class="CH1" href="https://www.edenschool.fr/">ici</a>
+            </p>
+
+            <form method="post" action="get">
+            <!--METHOD = comment circulent les données en PHP, ENCTYPE concerne la récupération des fichiers, ACTION est l'url de destination des données, le service demandé -->
+
+   
+                <section>
+                    <h2>INFORMATION DE CONTACT</h2>
+
+                    <fieldset>
+                        <legend>Quel est votre age</legend>
+                    
+                            <!--cases à cocher rondes, CHECKED en coche une par défaut et une seule peut être choisie-->
+                            <div>
+                                <label for="agemin"></label>
+                                <input type="radio" id="agemin" name="age" value="14" checked>12-14
+                            </div>
+                            <div>
+                                <label for="agemoy"></label>
+                                <input type="radio" id="agemoy" name="age" value="17" checked>15-17
+                            </div>
+                            <div>
+                                <label for="agemax"></label>
+                                <input type="radio" id="agemax" name="age" value="19" checked>18-19
+                            </div>
+                      
+                    </fieldset>
+                    <div class="contenaire2">
+                    <label for="nom">nom :</label>
+                    <input type="text" placeholder="Saisissez votre nom" name="nom" id="nom" required>
+                    </div>
+                    <div class="contenaire2">
+                    <label for="mail">mail :</label>
+                    <input type="email" placeholder="Saisissez votre mail" name="mail" id="mail" required>
+                    </div>
+
+                </section>
+
+                <section id="option">
+                    <h2>votre jeu préféré</h2>
+                    <div class="contenaire2">
+
+                    <label for="selConsole">Choisissez une console : </label>
+                    <select id="selConsole" name="selConsole">
+                        <option value="">----Choisissez une console----</option>
+                            <option value="playstation">Playstation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="pc">Ordinateur</option>
+                    </select>
+                    </div>
+            
+                    <div class="contenaire2">
+                        <label for="selJeux">Choisissez un jeu :</label>
+                        <select id="selJeux" name="selJeux">
+                                <option value="">----Choisissez un jeu----</option>
+                                <option value="gow">God Of War</option>
+                                <option value="lol">League Of Legends</option>
+                                <option value="wow">World Of Warcraft</option>
+                                <option value="fortnite">fortnite</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Votre message</h2>
+                    <label for="msg"></label>
+                    <textarea id="msg" name="msg" placeholder="saisissez votre message"></textarea>
+                
+                   <div class="contenaire2">
+                    <label for="cryptage">cryptage du message :</label>
+                    <input type="password" name="cryptage" id="cryptage">
+                   </div>
+                </section>
+                <input class="darkmode" type="submit" name="inscription" id="inscrit" value="Envoyer votre message">
+            </form>
+    </footer>
+
+    <aside id="prankDark">
+        <h2 class="UpFONT">c est une blague ... recharger la page !</h2>
     </aside>
-
-    
   <script src="assets/js/script.js"></script>
 </body>
 </html>

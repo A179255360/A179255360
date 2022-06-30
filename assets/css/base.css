@@ -20,9 +20,15 @@ body{
 
 
 
- /* classe utile pour tous  */
+ /* classe utile pour tous  & font size*/
 .UpFONT, h2, h3{
     text-transform: uppercase;
+}
+h2{
+    font-size: 2vw;
+}
+p{
+    font-size: 1.5vw;
 }
 .DownFONT{
     text-transform: lowercase;
@@ -68,14 +74,14 @@ h1{
     align-items: center;
     width: 33%;
     font-family: var(--PolRight);
+    font-size: 3vw;
 
 }
 
 button{
     height: 50px;
     width: 80px;
-    background-color: var(--CBLACK);
-    color: var(--CWhite);
+ 
     border-radius: 16px;
 }
 /* ------------------------- */
@@ -83,6 +89,9 @@ button{
 
 table, th, td {
     border: 1px solid;
+    width: 65vw;
+    height: 5vw;
+
   }
   #nosABO{
     display: flex;
@@ -96,36 +105,41 @@ table, th, td {
     width: 80%;
     margin: auto;
   }
-  .container{
-    float: left ;
-    width: 33%;
+  .container {
+    float: left;
+    width: 20%;
     height: 100%;
   }
-
 .backCARTE{
     background-color: var(--CGRAY);
 }
-.artCARTE{
-    height: 25vw;
+.artCARTE {
+    height: 13vw;
     border-radius: 10px;
     margin: 18px 0px;
-}
+  }
 .imgCARTE{
     height: 100%;
     border-radius: 10px;
 }
 .titreArtCARTE{
-    font-size: 11px;  
+    font-size: 1.5vw;
+    text-align: left;
+    width: 62vw;
 }
 .titreArtCARTE, .descArtCarte{
-    width: 60%;
     float: left;
-    text-align: left;
     margin: 0;
-    margin-left: 12px;
-    margin-bottom: 18px;
-    font-size: 2vw;
+    margin-left: 1vw;
 }
+.descArtCarte{
+    font-size: 1vw;
+    width: 45vw;
+    margin-top: 3vw;
+    margin-left: 10vw;
+  }
+
+
 
 /*---------- */
  /* le separateur */
@@ -144,19 +158,126 @@ table, th, td {
 
   /* le style du blog */
 #blog{
-    width: 50%;
+    width: 64vw;
     margin: auto;
 }
 
+.artBlog p{
+    font-size: 1.5vw;
+}
+
+.artBlog h3{
+    font-size: 1.8vw;
+}
 .artBlog{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 30px;
-}
+    width: 55vw;
+    margin: 2% 0%;
+  }
 .artBlog img{
-    height: 123px;
+    height: 17vw;
+    
 }
+
+.container3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
 
 
 /* ---------------- */
+
+
+/* footer style */
+
+footer{
+    background-color: var(--CBLUEFONCER);
+    text-align: center;
+    color: var(--CWhite);
+}
+form{
+    margin: auto;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+fieldset{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+  }
+
+  #inscrit{
+    width: 27%;
+    height: 42px;
+    margin: 20px auto;
+  }
+  #selConsole{
+    width: 35%;
+    height: 50px;
+  }
+
+  #selJeux{
+    width: 25%;
+    height: 50px;
+  }
+
+  .contenaire2{
+    width: 40vw;
+    margin-top: 1vw;
+
+  }
+  footer section{
+    width: 100%;
+  }
+  input, select{
+    width: 30%;
+    height: 38px;
+    border-radius: 10px;
+  }
+  textarea{
+    width: 26vw;
+    height: 10vw;
+    border-radius: 12px;
+  }
+/* ---------------- */
+
+
+/* prank dark mode*/
+.darkmode:hover{
+    background-color: var(--CORANGE);
+    border: var(--CBLACK) solid;
+
+}
+.darkmode{
+    background-color: var(--CBLACK);
+    color: var(--CWhite);
+}
+
+#prankDark{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--CBLUEFONCER);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  
+/* --------------------- */
 .clear{
     clear: both;
   }

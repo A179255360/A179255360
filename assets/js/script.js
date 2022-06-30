@@ -1,4 +1,6 @@
 "use strict";
+let menu = document.getElementById('maCarte');
+let blocafk = document.getElementById('prankDark');
 
 
 const plats = [
@@ -45,8 +47,6 @@ const plats = [
 
 
 
-let menu = document.getElementById('maCarte');
-
     
     for(const element of plats){
 
@@ -75,3 +75,7 @@ let menu = document.getElementById('maCarte');
 
         
     }
+
+document.querySelector('.darkmode').addEventListener('click', function(){
+    blocafk.style.display = "flex";
+})

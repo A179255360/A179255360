@@ -1,0 +1,59 @@
+ @media screen and (min-width: 681px) {
+/* header style pc */
+    h1{
+        width: 25%;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        height: 96px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    
+    }
+    
+    nav{
+        width: 30%;
+    
+    }
+
+
+    .container3{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+    .artBlog{
+        width: 38%;
+        margin: 1%;
+    }
+
+    table{
+        width: 60vw;
+        height: 3vw;
+    }
+
+    #maCarte {
+        width: 70%;
+        margin: auto;
+      }
+
+      .artCARTE {
+        height: 10vw;
+        border-radius: 10px;
+        margin: 18px 0px;
+      }
+
+      .titreArtCARTE {
+        width: 54vw;
+      }
+      .artBlog img{
+        height: 11vw;
+        
+    }
+ }
+
