@@ -85,9 +85,10 @@ table, th, td {
     border: 1px solid;
   }
   #nosABO{
-    width: 59%;
-    margin: auto;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 /* ---------------------- */
 /* LE STYLE DE MA CARTE */
@@ -98,25 +99,29 @@ table, th, td {
   .container{
     float: left ;
     width: 33%;
+    height: 100%;
   }
 
 .backCARTE{
     background-color: var(--CGRAY);
 }
 .artCARTE{
-    height: 120px;
+    height: 25vw;
     border-radius: 10px;
     margin: 18px 0px;
 }
 .imgCARTE{
-    height: 120px;
+    height: 100%;
     border-radius: 10px;
 }
 .titreArtCARTE, .descArtCarte{
-    width: 67%;
+    width: 64%;
     float: left;
     text-align: left;
     margin: 0;
+    margin-left: 12px;
+    margin-bottom: 18px;
+  
 }
 
 /*---------- */

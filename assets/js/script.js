@@ -54,7 +54,7 @@ let menu = document.getElementById('maCarte');
             menu.innerHTML +=
             `<article class="backCARTE artCARTE">
             <div class="container">
-                <img class="imgCARTE" src="${element.imgSrc}">
+                <img class="imgCARTE" src="${element.imgSrc}" alt="presentation de plat">
                 </div>
                     <h3 class="titreArtCARTE">${element.title}</h3>
                     <p class="descArtCarte">${element.text}</p>
@@ -65,7 +65,7 @@ let menu = document.getElementById('maCarte');
             menu.innerHTML +=
             `<article class="artCARTE">
             <div class="container">
-                <img class="imgCARTE" src="${element.imgSrc}">
+                <img class="imgCARTE" src="${element.imgSrc}" alt="presentation de plat">
                 </div>
                     <h3 class="titreArtCARTE">${element.title}</h3>
                     <p class="descArtCarte">${element.text}</p>
