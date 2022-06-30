@@ -3,8 +3,8 @@ let menu = document.getElementById('maCarte');
 let blocafk = document.getElementById('prankDark');
 
 
-const plats = [
-    {
+const plats = [ // tableau en json pour savoir si oui ou non il y aura un back gray et avec linfos title , desc
+    { 
         confirm: true,
         imgSrc: "./assets/img/img-01.jpg",
         title:"un super titre",
@@ -75,7 +75,7 @@ const plats = [
 
         
     }
-
+// au click ça active une page qui est en zIndex 999 pour bloquer tous accés 
 document.querySelector('.darkmode').addEventListener('click', function(){
     blocafk.style.display = "flex";
-})
+}); 

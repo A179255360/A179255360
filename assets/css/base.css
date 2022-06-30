@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-:root{
+:root{ /* les variables css  */
     --PolRight:'Righteous';
     --PolLATO:'Lato';
   /* C = Color*/
@@ -12,7 +12,7 @@
   --CORANGE: #EF8354;
   --CGRISBLANC: #EAEBEB;
 }
-body{
+body{ /*reglage par default */
     margin: 0;
     box-sizing: border-box;
     font-family: var(--PolLATO);

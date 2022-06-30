@@ -15,37 +15,37 @@
 </head>
 <body>
   
-    <header>
+    <header> <!-- en tête du site -->
 
-        <h1 class="backCBLUE UpFONT"><span class="CH1">"</span>BON APP<span class="CH1">"</span></h1>
-        <nav>
-            <ul>
+        <h1 class="backCBLUE UpFONT"><span class="CH1">"</span>BON APP<span class="CH1">"</span></h1> <!-- titre du site-->
+        <nav> <!-- nav bar -->
+            <ul> 
                 <li><a href="#maCarte">PLATS</a></li>
                 <li><a href="#blog">BLOG</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
-        <button class="darkmode UpFONT">DARK</button>
+        <button class="darkmode UpFONT">DARK</button> <!-- dark mode button-->
     </header>
 
-    <main>
+    <main> <!-- main de la page avec tous le contenue inter changable-->
         <section id="nosABO">
             <h2>Nos abonnements</h2>
-            <table>
+            <table> <!-- tableau pour les abbonements-->
   
                 <tbody>
-                    <tr>
+                    <tr> <!-- first row-->
                         <td class="backCBLUE">bronze</td>
                         <td class="backCBLUE">silver</td>
                         <td class="backCBLUE">gold</td>
                     </tr>
-                    <tr>
+                    <tr> <!-- two row-->
                         <td>1 repas par semaine</td>
                         <td>3 repas par semaine</td>
                         <td>5 repas par semaine</td>
                     </tr>
-                    <tr>
+                    <tr> <!-- three row-->
                         <td class="backCBLUE">29 euros/mois</td>
                         <td class="backCBLUE">79 euros/mois</td>
                         <td class="backCBLUE">149 euros/mois</td>
@@ -57,15 +57,16 @@
 
         <section id="maCarte"> <!-- ma section des plats a la carte-->
             <h2>les plats a la carte</h2>
-
-              
+            <!-- 
+                insertion du js en dom section (famille d'acuille)
+            -->
         </section>
-        <aside id="seperate"> <!-- separateur -->
+        <aside id="seperate"> <!-- separateur avec un effet parralax  -->
         </aside>
 
         <section id="blog"> <!-- mon blog-->
             <h2>blog</h2>
-                <div class="container3">
+                <div class="container3"> <!-- contenaire d'article -->
                     <article class="artBlog"> <!-- mon blog first article-->
                         <img src="assets/img/pic01.jpg" alt="une super sacoche de velo">
                         <h3>un super titre</h3>
@@ -114,11 +115,10 @@
             </p>
 
             <form method="post" action="get">
-            <!--METHOD = comment circulent les données en PHP, ENCTYPE concerne la récupération des fichiers, ACTION est l'url de destination des données, le service demandé -->
-
+                <!-- formulaire de mise en contact-->
    
                 <section>
-                    <h2>INFORMATION DE CONTACT</h2>
+                    <h2>INFORMATION DE CONTACT</h2> <!-- les infos de contact-->
 
                     <fieldset>
                         <legend>Quel est votre age</legend>
@@ -150,7 +150,7 @@
                 </section>
 
                 <section id="option">
-                    <h2>votre jeu préféré</h2>
+                    <h2>votre jeu préféré</h2> <!-- les infos sur les jeux et console favorite-->
                     <div class="contenaire2">
 
                     <label for="selConsole">Choisissez une console : </label>
@@ -174,7 +174,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section> <!-- le message que vous voulez faire parvenire -->
                     <h2>Votre message</h2>
                     <label for="msg"></label>
                     <textarea id="msg" name="msg" placeholder="saisissez votre message"></textarea>
