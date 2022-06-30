@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --PolRight:'Righteous';
+    --PolLATO:'Lato';
+  /* C = Color*/
+  --CBLACK: #2D3142;
+  --CBLUEFONCER: #4F5D75;
+  --CGRAY: #BFC0C0;
+  --CWhite: #FFFFFF;
+  --CORANGE: #EF8354;
+  --CGRISBLANC: #EAEBEB;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--PolLATO);
+}
+
+
+
+ /* classe utile pour tous  */
+.UpFONT, h2, h3{
+    text-transform: uppercase;
+}
+.DownFONT{
+    text-transform: lowercase;
+
+}
+img{
+    width: 100%;
+}
+section{
+    text-align: center;
+}
+/* ----------- */
+ /* le header */
+ .CH1{
+    color: var( --CORANGE); 
+ }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--CWhite);
+}
+header , .backCBLUE{
+    background-color: var(--CBLUEFONCER);
+    color: var(--CWhite);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    height: 96px;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 5px black;
+}
+h1{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    font-family: var(--PolRight);
+
+}
+
+button{
+    height: 50px;
+    width: 80px;
+    background-color: var(--CBLACK);
+    color: var(--CWhite);
+    border-radius: 16px;
+}
+/* ------------------------- */
+/* LE STYLE DE NOS ABONNEMENT*/
+
+table, th, td {
+    border: 1px solid;
+  }
+  #nosABO{
+    width: 59%;
+    margin: auto;
+  
+  }
+/* ---------------------- */
+/* LE STYLE DE MA CARTE */
+#maCarte{
+    width: 80%;
+    margin: auto;
+  }
+  .container{
+    float: left ;
+    width: 33%;
+  }
+
+.backCARTE{
+    background-color: var(--CGRAY);
+}
+.artCARTE{
+    height: 120px;
+    border-radius: 10px;
+    margin: 18px 0px;
+}
+.imgCARTE{
+    height: 120px;
+    border-radius: 10px;
+}
+.titreArtCARTE, .descArtCarte{
+    width: 67%;
+    float: left;
+    text-align: left;
+    margin: 0;
+}
+
+/*---------- */
+ /* le separateur */
+#seperate{
+    height: 180px;
+    margin-top: 60px;
+    background-image: url(../img/img-12.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 70%;
+    border-radius: 10px;
+    margin: 50px auto;
+  } 
+  /* -----------------  */
+
+  /* le style du blog */
+#blog{
+    width: 50%;
+    margin: auto;
+}
+
+.artBlog{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 30px;
+}
+.artBlog img{
+    height: 123px;
+}
+
+
+/* ---------------- */
+.clear{
+    clear: both;
+  }
